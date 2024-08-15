@@ -14,9 +14,9 @@ export async function POST(req)  {
             content: systemPrompt, 
             }, 
             ...data,
-         ],
-         model: "gpt-4o-mini",
-         stream: true, 
+        ],
+        model: "gpt-4o-mini",
+        stream: true, 
     }) 
     
     const stream = new ReadableStream({
